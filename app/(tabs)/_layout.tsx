@@ -51,7 +51,7 @@ function CustomTabBar({ state, descriptors, navigation }: BottomTabBarProps) {
           });
         };
 
-        const iconName = route.name === 'index' ? 'message.fill' : 'gearshape.fill';
+        const iconName = route.name === 'chat' ? 'message.fill' : 'gearshape.fill';
         const iconColor = isFocused
           ? Colors[colorScheme ?? 'light'].tabIconSelected
           : Colors[colorScheme ?? 'light'].tabIconDefault;
@@ -114,7 +114,7 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="index"
+        name="chat"
         options={{
           title: 'Chat',
         }}
