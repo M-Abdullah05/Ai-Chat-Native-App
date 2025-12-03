@@ -1,16 +1,16 @@
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { ThemedView } from '@/components/themed-view';
 import { ThemedText } from '@/components/themed-text';
 
-export default function ChatScreen() {
+export default function SettingsScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.content}>
         <ThemedText type="title" style={styles.title}>
-          Chat
+          Settings
         </ThemedText>
         <ThemedText style={styles.subtitle}>
-          AI Chat interface coming soon...
+          Settings screen coming soon...
         </ThemedText>
       </View>
     </ThemedView>
@@ -34,3 +34,4 @@ const styles = StyleSheet.create({
     opacity: 0.6,
   },
 });
+
